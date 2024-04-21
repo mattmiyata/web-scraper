@@ -2,77 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import re  #regular expression
 
-# with open('index.html', 'r') as f: 
-#     doc = BeautifulSoup(f, 'html.parser')
 
-# # print(doc.prettify())
-
-# tags = doc.find_all('p')[0]
-
-# print(tags.find_all('b'))
-
-# url = "https://www.newegg.com/p/27N-008H-00001"
-
-# result = requests.get(url)
-# # print(result.text)
-# doc = BeautifulSoup(result.text, 'html.parser')
-
-# prices = doc.find_all(string='$')
-# parent = prices[0].parent
-# strong = parent.find('strong')
-# print(strong.string)
-
-##############################################################
-# tag = doc.find('option')
-# tag['value'] = 'new value'
-# tag['color'] = 'blue'
-# print(tag.attrs)
-# print(tag)
-
-# tags = doc.find_all(["p", "div", "li"])
-# print(tags)
-    
-# tags = doc.find_all(['option'], string='Undergraduate')
-# print(tags)
-
-# tags = doc.find_all(class_='btn-item')
-# print (tags)
-
-# tags = doc.find_all(string=re.compile('\$.*'), limit=1)
-# print(tags)
-# for tag in tags:
-#     print(tag.strip())
-    
-# tags = doc.find_all('input', type='text')
-# for tag in tags:
-#     tag['placeholder'] = 'I changed you!'
-    
-# with open('changed.html', 'w') as file: 
-#     file.write(str(doc))
-
-##############################################################
-
-# url = 'https://coinmarketcap.com/'
-# result = requests.get(url).text
-# doc = BeautifulSoup(result, 'html.parser')
-
-# tbody = doc.tbody
-# trs = tbody.contents
-# # print(trs[0].parent.name)
-
-# # print(list(trs[0].children))
-
-# prices = {}
-
-# for tr in trs[:10]: 
-#     name, price = tr.contents[2:4]
-#     fixed_name = name.p.string
-#     fixed_price = price.span.string
-
-#     prices[fixed_name] = fixed_price
-
-
-# print(prices)
     
 search_term = input('What product do you want to search for?')
 
